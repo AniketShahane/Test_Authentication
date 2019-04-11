@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body style="overflow: hidden">
+    <div class="jumbotron text-center" style="background-color: #1890ff; border-radius: 0 !important; color: white; height: 100vh; width: 100vw;">
+        <h1 style='text-align: center;'><i class="fas fa-user-secret"></i> Hey {{ name }}, you've been logged in</h1>
+        <a class="btn btn-secondary btn-lg mt-4" href="{% url 'logout' %}" style="background-color: white; color: #1890ff; border: 2px solid white;" role="button"><i class="fas fa-sign-in-alt" style="color: #1890ff"></i> Logout</a>
+    </div>
+</body>
+</html>
